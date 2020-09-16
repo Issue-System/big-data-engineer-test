@@ -6,7 +6,7 @@ Remember, you already went through our screening and first interview; this is th
 
 ## Where to run
 
-So, while you are developing I expect that you are capable of setting up a localstack with the tools you select. You will need Spark, HBase, Kafka, Hive and S3/HDFS... feel free to change these components if you want to use different tools.
+So, while you are developing I expect that you are capable of setting up a localstack with the tools you select. You will need Spark, HBase, Kafka, Hive and S3/Azure Blob Storage/HDFS... feel free to change these components if you want to use different tools.
 
 > You must use Scala overall plus Spark and Kafka on the assignments that require it.
 
@@ -18,10 +18,10 @@ So, while you are developing I expect that you are capable of setting up a local
 
 > Yup, we use cloud a lot.
 
-## 1. Basic S3/HDFS & Hive on Spark
+## 1. Basic HDFS & Hive on Spark
 
 Build a Scala application using Spark and execute against Hive & Spark to do the following:
-- upload the `.csv` files on <a href="data-spark/">`data-spark`</a> to S3/HDFS
+- upload the `.csv` files on <a href="data-spark/">`data-spark`</a> to HDFS
 - create tables on Hive for each `.csv` file
 - output a dataframe on Spark that contains `DRIVERID, NAME, HOURS_LOGGED, MILES_LOGGED` so you can have aggregated information about the driver.
 
@@ -41,7 +41,7 @@ Same thing here, besides the code on a repo, explain you steps and impression in
 ## 3. Kafka Ingestion
 
 Setup a Kafka cluster and create a third application that ingests the raw stream from Kafka with the following:
-- Ingest this `raw` stream into S3/HDFS. How? Choose your preferred tool - Kafka (Streaming or Connect), Spark (Regular or Streaming), Flink, Storm, NiFi... up to you. 
+- Ingest `raw` stream into HDFS. How? Choose your preferred tool - Kafka (Streaming or Connect), Spark (Regular or Streaming), Flink, Storm, NiFi... up to you. 
 - Choose if you want to do in batches or real-streaming.
 <br> I expect you to have issues on the connectivity and make it work here, so do not worry... put your learnings and explain your steps in <a href="`MyExperience.md">`MyExperience.md`</a>.
 
@@ -51,4 +51,4 @@ You get extra points if you (3) using Spark Structured Streaming.
 ## Doubts &/Or Submission
 
 Clone this repository and create your own version of it. In the end, commit and push your solution and send us your GitHub repo link.
-<br> Feel free to reach out to [Thiago de Faria](mailto:thiago.de.faria@linkit.nl).
+<br> Feel free to reach out to [Alyona Galyeva](mailto:alyona.galyeva@linkit.nl).
